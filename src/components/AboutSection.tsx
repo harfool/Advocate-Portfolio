@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from 'react';
 import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
-import { GraduationCap, Award, MapPin, Calendar } from 'lucide-react';
+import { GraduationCap, Award, MapPin, Calendar, Scale, Gavel, Building } from 'lucide-react';
 
 export const AboutSection = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -25,101 +25,109 @@ export const AboutSection = () => {
   }, []);
 
   return (
-    <section ref={sectionRef} className="py-20 bg-section-gradient">
-      <div className="container mx-auto px-6 lg:px-12">
-        <div className="text-center mb-16">
-          <h2 className={`font-serif text-5xl lg:text-6xl font-bold text-primary mb-6 ${isVisible ? 'animate-on-scroll visible' : 'animate-on-scroll'}`}>
-            About Me
-          </h2>
-          <p className={`font-sans text-xl text-muted-foreground max-w-3xl mx-auto ${isVisible ? 'animate-on-scroll visible' : 'animate-on-scroll'}`} style={{ animationDelay: '0.2s' }}>
-            Dedicated to upholding justice and providing exceptional legal representation 
-            with a track record of success in India's most prestigious courts.
-          </p>
-        </div>
+    <section ref={sectionRef} className="relative min-h-screen flex items-center justify-center overflow-hidden bg-section-gradient">
+      {/* Background Pattern - Similar to Hero */}
+      <div className="absolute inset-0 bg-gradient-to-r from-primary/20 via-primary/10 to-primary/5"></div>
+      
+      {/* Floating Legal Icons - Similar to Hero */}
+      <div className="absolute inset-0 overflow-hidden pointer-events-none">
+        <Scale className="absolute top-20 right-10 w-8 h-8 md:w-12 md:h-12 text-accent/30 floating" style={{ animationDelay: '0s' }} />
+        <Gavel className="absolute top-40 left-20 w-10 h-10 md:w-16 md:h-16 text-accent/20 floating" style={{ animationDelay: '1s' }} />
+        <Building className="absolute bottom-32 right-20 w-9 h-9 md:w-14 md:h-14 text-accent/25 floating" style={{ animationDelay: '2s' }} />
+      </div>
 
-        <div className="grid lg:grid-cols-2 gap-16 items-center">
-          {/* Left Content */}
-          <div className="space-y-8">
-            <div className={`${isVisible ? 'animate-on-scroll visible' : 'animate-on-scroll'}`} style={{ animationDelay: '0.4s' }}>
-              <h3 className="font-serif text-3xl font-bold text-primary mb-4">Legal Philosophy</h3>
-              <p className="font-sans text-lg text-foreground/80 leading-relaxed">
-                My approach to law is grounded in the belief that every client deserves 
-                unwavering advocacy and meticulous attention to detail. I combine traditional 
-                legal wisdom with modern strategic thinking to deliver results that matter.
+      <div className="container mx-auto px-6 lg:px-12 relative z-10">
+        <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
+          {/* Left Content - Text Section */}
+          <div className="text-center lg:text-left space-y-6 lg:space-y-8">
+            <div className="space-y-3 lg:space-y-4">
+              <h1 className={`text-3xl md:text-4xl lg:text-5xl font-bold font-serif text-primary ${isVisible ? 'animate-on-scroll visible' : 'animate-on-scroll'}`}>
+                Meet Your Legal Advocate
+              </h1>
+              <h2 className={`text-lg md:text-xl lg:text-2xl font-sans text-muted-foreground ${isVisible ? 'animate-on-scroll visible' : 'animate-on-scroll'}`} style={{ animationDelay: '0.3s' }}>
+                Dedicated to upholding justice with proven expertise
+              </h2>
+            </div>
+            
+            {/* Legal Philosophy */}
+            <div className={`${isVisible ? 'animate-on-scroll visible' : 'animate-on-scroll'}`} style={{ animationDelay: '0.6s' }}>
+              <p className="font-sans text-base lg:text-lg text-foreground/80 leading-relaxed">
+                My approach to law combines traditional legal wisdom with modern strategic thinking. 
+                Every client deserves unwavering advocacy and meticulous attention to detail to deliver 
+                results that matter.
               </p>
             </div>
 
-            <div className={`${isVisible ? 'animate-on-scroll visible' : 'animate-on-scroll'}`} style={{ animationDelay: '0.6s' }}>
-              <h3 className="font-serif text-3xl font-bold text-primary mb-4">Experience</h3>
-              <p className="font-sans text-lg text-foreground/80 leading-relaxed mb-6">
-                With over 12 years of practice, I have successfully represented clients 
-                across various legal domains, from complex criminal cases to intricate 
-                corporate matters. My courtroom presence and strategic acumen have 
-                consistently delivered favorable outcomes.
-              </p>
-              
-              <div className="grid grid-cols-2 gap-4">
-                <div className="flex items-center space-x-3">
-                  <MapPin className="w-5 h-5 text-accent" />
-                  <span className="font-sans text-foreground">Delhi High Court</span>
+            {/* Experience Stats - Similar to Hero Stats */}
+            <div className={`grid grid-cols-2 gap-4 lg:gap-8 pt-6 lg:pt-8 ${isVisible ? 'animate-on-scroll visible' : 'animate-on-scroll'}`} style={{ animationDelay: '0.9s' }}>
+              <div className="text-center lg:text-left">
+                <div className="flex items-center justify-center lg:justify-start space-x-2 mb-2">
+                  <Calendar className="w-4 h-4 lg:w-5 lg:h-5 text-accent" />
+                  <span className="text-2xl lg:text-3xl font-bold text-accent font-serif">12+</span>
                 </div>
-                <div className="flex items-center space-x-3">
-                  <MapPin className="w-5 h-5 text-accent" />
-                  <span className="font-sans text-foreground">Supreme Court of India</span>
+                <div className="text-xs lg:text-sm text-foreground/80 font-sans">Years Experience</div>
+              </div>
+              <div className="text-center lg:text-left">
+                <div className="flex items-center justify-center lg:justify-start space-x-2 mb-2">
+                  <Award className="w-4 h-4 lg:w-5 lg:h-5 text-accent" />
+                  <span className="text-2xl lg:text-3xl font-bold text-accent font-serif">150+</span>
                 </div>
-                <div className="flex items-center space-x-3">
-                  <Calendar className="w-5 h-5 text-accent" />
-                  <span className="font-sans text-foreground">2012 - Present</span>
-                </div>
-                <div className="flex items-center space-x-3">
-                  <Award className="w-5 h-5 text-accent" />
-                  <span className="font-sans text-foreground">150+ Cases Won</span>
-                </div>
+                <div className="text-xs lg:text-sm text-foreground/80 font-sans">Cases Won</div>
+              </div>
+            </div>
+
+            {/* Court Practice */}
+            <div className={`grid grid-cols-1 gap-3 ${isVisible ? 'animate-on-scroll visible' : 'animate-on-scroll'}`} style={{ animationDelay: '1.2s' }}>
+              <div className="flex items-center justify-center lg:justify-start space-x-3">
+                <MapPin className="w-4 h-4 lg:w-5 lg:h-5 text-accent" />
+                <span className="font-sans text-sm lg:text-base text-foreground">Delhi High Court</span>
+              </div>
+              <div className="flex items-center justify-center lg:justify-start space-x-3">
+                <MapPin className="w-4 h-4 lg:w-5 lg:h-5 text-accent" />
+                <span className="font-sans text-sm lg:text-base text-foreground">Supreme Court of India</span>
               </div>
             </div>
           </div>
 
-          {/* Right Content - Achievements */}
-          <div className="space-y-6">
-            <Card className={`practice-card ${isVisible ? 'animate-on-scroll visible' : 'animate-on-scroll'}`} style={{ animationDelay: '0.5s' }}>
-              <CardContent className="p-8">
-                <div className="flex items-center space-x-4 mb-4">
-                  <GraduationCap className="w-8 h-8 text-accent" />
-                  <h4 className="font-serif text-2xl font-bold text-primary">Education</h4>
-                </div>
-                <div className="space-y-3">
-                  <div>
-                    <Badge variant="secondary" className="mb-2">LLB</Badge>
-                    <p className="font-sans text-foreground">
-                      Bachelor of Laws from Delhi University Law Faculty
-                    </p>
+          {/* Right Content - Cards Section */}
+          <div className={`flex justify-center lg:justify-end ${isVisible ? 'animate-on-scroll visible' : 'animate-on-scroll'}`} style={{ animationDelay: '0.6s' }}>
+            <div className="relative w-full max-w-md">
+              {/* Education Card */}
+              <Card className="practice-card mb-6 hover-lift shadow-2xl">
+                <CardContent className="p-6 lg:p-8">
+                  <div className="flex items-center space-x-3 mb-4">
+                    <GraduationCap className="w-6 h-6 lg:w-7 lg:h-7 text-accent" />
+                    <h4 className="font-serif text-lg lg:text-xl font-bold text-primary">Education</h4>
                   </div>
-                  <div>
-                    <Badge variant="secondary" className="mb-2">LLM</Badge>
-                    <p className="font-sans text-foreground">
-                      Master of Laws in Criminal Law from Jamia Millia Islamia
-                    </p>
+                  <div className="space-y-4">
+                    <div>
+                      <Badge variant="secondary" className="mb-2 text-xs">LLB</Badge>
+                      <p className="font-sans text-sm lg:text-base text-foreground font-medium">
+                        Bachelor of Laws
+                      </p>
+                      <p className="font-sans text-xs lg:text-sm text-foreground/70">
+                        Delhi University Law Faculty
+                      </p>
+                    </div>
+                    <div>
+                      <Badge variant="secondary" className="mb-2 text-xs">LLM</Badge>
+                      <p className="font-sans text-sm lg:text-base text-foreground font-medium">
+                        Master of Laws in Criminal Law
+                      </p>
+                      <p className="font-sans text-xs lg:text-sm text-foreground/70">
+                        Jamia Millia Islamia
+                      </p>
+                    </div>
                   </div>
-                </div>
-              </CardContent>
-            </Card>
+                </CardContent>
+              </Card>
 
-            <Card className={`practice-card ${isVisible ? 'animate-on-scroll visible' : 'animate-on-scroll'}`} style={{ animationDelay: '0.7s' }}>
-              <CardContent className="p-8">
-                <div className="flex items-center space-x-4 mb-4">
-                  <Award className="w-8 h-8 text-accent" />
-                  <h4 className="font-serif text-2xl font-bold text-primary">Specializations</h4>
-                </div>
-                <div className="flex flex-wrap gap-2">
-                  <Badge className="bg-accent text-accent-foreground">Criminal Defense</Badge>
-                  <Badge className="bg-accent text-accent-foreground">Corporate Law</Badge>
-                  <Badge className="bg-accent text-accent-foreground">Civil Litigation</Badge>
-                  <Badge className="bg-accent text-accent-foreground">Constitutional Law</Badge>
-                  <Badge className="bg-accent text-accent-foreground">Arbitration</Badge>
-                  <Badge className="bg-accent text-accent-foreground">Commercial Disputes</Badge>
-                </div>
-              </CardContent>
-            </Card>
+              {/* Specializations Card */}
+             
+
+              {/* Golden Accent Border - Similar to Hero */}
+              <div className="absolute -inset-4 bg-gradient-to-r from-accent/30 to-accent/10 rounded-3xl -z-10 blur-sm"></div>
+            </div>
           </div>
         </div>
       </div>
