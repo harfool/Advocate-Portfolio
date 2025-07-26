@@ -56,11 +56,11 @@ export const HeroSection = () => {
             {/* Achievement Stats */}
             <div className={`grid grid-cols-3 gap-4 lg:gap-8 pt-6 lg:pt-8 ${isVisible ? 'animate-on-scroll visible' : 'animate-on-scroll'}`} style={{ animationDelay: '1.2s' }}>
               <div className="text-center">
-                <div className="text-2xl lg:text-3xl font-bold text-accent font-serif">150+</div>
+                <div className="text-2xl lg:text-3xl font-bold text-accent font-serif">100+</div>
                 <div className="text-xs lg:text-sm text-primary-foreground/80 font-sans">Cases Won</div>
               </div>
               <div className="text-center">
-                <div className="text-2xl lg:text-3xl font-bold text-accent font-serif">12+</div>
+                <div className="text-2xl lg:text-3xl font-bold text-accent font-serif">10+</div>
                 <div className="text-xs lg:text-sm text-primary-foreground/80 font-sans">Years Experience</div>
               </div>
               <div className="text-center">
