@@ -54,20 +54,18 @@ export const ContactSection = () => {
   };
 
   const handleWhatsAppSubmit = () => {
-    const whatsappMessage = `Hello, I would like to schedule a consultation with Advocate Harfool Gujjar.
+        const whatsappMessage = `Hello, I would like to schedule a consultation with Advocate Ramkumar Prajapat.
 
-*Client Details:*
+Details:
 Name: ${formData.name}
 Email: ${formData.email}
 Phone: ${formData.phone}
 Case Type: ${formData.caseType}
-
-*Case Details:*
-${formData.message}
+Message: ${formData.message}
 
 Please let me know your availability for a consultation.`;
 
-    const whatsappUrl = `https://wa.me/919876543210?text=${encodeURIComponent(whatsappMessage)}`;
+    const whatsappUrl = `https://wa.me/919829184895?text=${encodeURIComponent(whatsappMessage)}`;
     window.open(whatsappUrl, '_blank');
     
     toast.success('Opening WhatsApp with your consultation details!');
@@ -77,17 +75,17 @@ Please let me know your availability for a consultation.`;
     {
       icon: MapPin,
       title: 'Office Address',
-      details: ['Supreme Court Bar Association', 'New Delhi - 110001', 'India']
+      details: ['P-21, R.K. Purani Colony', 'Purana Jorawar Pur Ke Paas', 'Gulabpura, Bhilwada (Raj.)']
     },
     {
       icon: Phone,
       title: 'Phone Number',
-      details: ['+919929964641', '+91 11 2338 7654']
+      details: ['+91 98291-84895', '+91 81188-49583']
     },
     {
       icon: Mail,
       title: 'Email Address',
-      details: ['harfool.gujjar@legalfirm.com', 'info@advocateharfool.com']
+      details: ['rkp01041992@gmail.com', 'contact@ramkumarprajapat.com']
     },
     {
       icon: Clock,
@@ -104,7 +102,7 @@ Please let me know your availability for a consultation.`;
             Contact Us
           </h2>
           <p className={`font-sans text-xl text-muted-foreground max-w-3xl mx-auto ${isVisible ? 'animate-on-scroll visible' : 'animate-on-scroll'}`} style={{ animationDelay: '0.2s' }}>
-            Ready to discuss your legal matter? Schedule a consultation with Advocate Harfool Gujjar 
+            Ready to discuss your legal matter? Schedule a consultation with Advocate Ramkumar Prajapat 
             and take the first step towards resolving your legal challenges.
           </p>
         </div>
@@ -169,7 +167,7 @@ Please let me know your availability for a consultation.`;
                         onChange={handleInputChange}
                         required
                         className="transition-all duration-300 focus:ring-2 focus:ring-accent"
-                        placeholder="+919929964641"
+                        placeholder="+919829184895"
                       />
                     </div>
                     <div className="space-y-2">

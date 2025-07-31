@@ -6,8 +6,8 @@ import { Menu, X, Phone } from 'lucide-react';
 export const Navigation = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   
-  const whatsappNumber = "+919929964641"; 
-  const whatsappMessage = "Hello, I would like to schedule a consultation with Advocate Rajkumar Vaishnav.";
+  const whatsappNumber = "+919829184895"; 
+  const whatsappMessage = "Hello, I would like to schedule a consultation with Advocate Ramkumar Prajapat.";
   const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(whatsappMessage)}`;
 
   const scrollToSection = (sectionId: string) => {
@@ -33,7 +33,7 @@ export const Navigation = () => {
           {/* Logo */}
           <div className="flex-shrink-0">
             <h1 className="font-serif text-2xl font-bold text-primary">
-              Rajkumar Vaishnav
+              Ramkumar Prajapat
             </h1>
           </div>
 

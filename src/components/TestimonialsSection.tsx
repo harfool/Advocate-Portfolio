@@ -7,7 +7,7 @@ const testimonials = [
   {
     name: 'Rajesh Kumar',
     designation: 'CEO, TechCorp Industries',
-    content: 'Advocate Harfool Gujjar\'s expertise in corporate law is unmatched. He guided us through a complex merger with precision and professionalism. His strategic insights saved us months of legal complications.',
+    content: 'Advocate Ramkumar Prajapat\'s expertise in criminal law is unmatched. He guided us through a complex legal case with precision and professionalism. His strategic insights and dedication saved us from significant legal complications.',
     rating: 5,
     case: 'Corporate Merger Advisory'
   },

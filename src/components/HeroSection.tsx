@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import { Button } from '@/components/ui/button';
 import heroImage from '@/assets/hero-bg.jpg';
-import advocatePortrait from '@/assets/advocate-portrait.jpg';
+import advocatePortrait from '../assets/profile.jpg';
 import { Scale, Gavel, Building } from 'lucide-react';
 
 export const HeroSection = () => {
@@ -34,16 +34,16 @@ export const HeroSection = () => {
           <div className="text-center lg:text-left space-y-6 lg:space-y-8">
             <div className="space-y-3 lg:space-y-4 mt-12 lg:mt-16">
               <h1 className={`hero-title text-3xl md:text-4xl lg:text-5xl font-bold ${isVisible ? 'animate-on-scroll visible' : 'animate-on-scroll'}`}>
-                Rajkumar Vaishnav
+                Ramkumar Prajapat
               </h1>
               <h2 className={`hero-subtitle text-lg md:text-xl lg:text-2xl ${isVisible ? 'animate-on-scroll visible' : 'animate-on-scroll'}`} style={{ animationDelay: '0.3s' }}>
-                Criminal & NDP's practice and Law Specialist
+                Advocate (Rajasthan High Court)
               </h2>
             </div>
             
             <div className={`flex flex-col sm:flex-row gap-4 lg:gap-6 justify-center lg:justify-start ${isVisible ? 'animate-on-scroll visible' : 'animate-on-scroll'}`} style={{ animationDelay: '0.9s' }}>
               <a
-                href="https://wa.me/9929964641?text=Hello%2C%20I%20would%20like%20to%20schedule%20a%20consultation%20with%20Advocate%20Rajkumar%20Vaishnav."
+                href="https://wa.me/919829184895?text=Hello%2C%20I%20would%20like%20to%20schedule%20a%20consultation%20with%20Advocate%20Ramkumar%20Prajapat."
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -73,14 +73,14 @@ export const HeroSection = () => {
           {/* Portrait Image */}
           <div className={`flex justify-center lg:justify-end ${isVisible ? 'animate-on-scroll visible' : 'animate-on-scroll'}`} style={{ animationDelay: '0.6s' }}>
             <div className="relative">
-              <div className="w-60 h-72 md:w-72 md:h-80 lg:w-80 lg:h-96 relative overflow-hidden rounded-2xl shadow-2xl hover-lift">
+                <div className="w-60 h-72 md:w-72 md:h-80 lg:w-80 lg:h-96 relative overflow-hidden rounded-2xl shadow-2xl hover-lift">
                 <img 
-                  src="https://res.cloudinary.com/df2maejnd/image/upload/v1753503327/WhatsApp_Image_2025-07-26_at_09.39.41_10b210b9_gguiaw.jpg"
-                  alt="Advocate Rajkumar Vaishnav" 
+                  src={advocatePortrait}
+                  alt="Advocate Ramkumar Prajapat" 
                   className="w-full h-full object-cover"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-primary/20 to-transparent"></div>
-              </div>
+                </div>
               {/* Golden Accent Border */}
               <div className="absolute -inset-4 bg-gradient-to-r from-accent/30 to-accent/10 rounded-3xl -z-10 blur-sm"></div>
             </div>

@@ -50,7 +50,7 @@ export const ClosingSection = () => {
               creates a legacy that transcends time."
             </blockquote>
             <p className="font-sans text-xl text-primary-foreground/80">
-              - Advocate Rajkumar Vaishnav
+              - Advocate Ramkumar Prajapat
             </p>
           </div>
 
@@ -66,7 +66,7 @@ export const ClosingSection = () => {
             
             <div className="flex flex-col sm:flex-row gap-6 justify-center">
               <a
-                href="https://wa.me/919876543210?text=Hello%2C%20I%20would%20like%20to%20schedule%20a%20free%20consultation%20with%20Advocate%20Harfool%20Gujjar."
+                href="https://wa.me/919829184895?text=Hello%2C%20I%20would%20like%20to%20schedule%20a%20free%20consultation%20with%20Advocate%20Ramkumar%20Prajapat."
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -86,7 +86,7 @@ export const ClosingSection = () => {
                 <Phone className="w-8 h-8 text-accent" />
               </div>
               <h3 className="font-serif text-xl font-bold text-primary-foreground mb-2">Call Now</h3>
-              <p className="font-sans text-primary-foreground/80">+919929964641</p>
+              <p className="font-sans text-primary-foreground/80">+919829184895</p>
               <p className="font-sans text-sm text-primary-foreground/60">Available 24/7 for emergencies</p>
             </div>
             
@@ -95,7 +95,7 @@ export const ClosingSection = () => {
                 <Mail className="w-8 h-8 text-accent" />
               </div>
               <h3 className="font-serif text-xl font-bold text-primary-foreground mb-2">Email Us</h3>
-              <p className="font-sans text-primary-foreground/80">rajkumar9929964641@gmail.com</p>
+              <p className="font-sans text-primary-foreground/80">rkp01041992@gmail.com</p>
               <p className="font-sans text-sm text-primary-foreground/60">Response within 2 hours</p>
             </div>
             

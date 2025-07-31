@@ -80,7 +80,7 @@ export const AboutSection = () => {
             <div className={`grid grid-cols-1 gap-3 ${isVisible ? 'animate-on-scroll visible' : 'animate-on-scroll'}`} style={{ animationDelay: '1.2s' }}>
               <div className="flex items-center justify-center lg:justify-start space-x-3">
                 <MapPin className="w-4 h-4 lg:w-5 lg:h-5 " />
-                <span className="font-sans text-sm lg:text-base text-foreground">Delhi High Court</span>
+                <span className="font-sans text-sm lg:text-base text-foreground">Rajasthan High Court</span>
               </div>
             </div>
           </div>
@@ -97,15 +97,41 @@ export const AboutSection = () => {
                   </div>
                   <div className="space-y-4">
                     <div>
+                      <Badge variant="secondary" className="mb-2 text-xs">LLM</Badge>
+                      <p className="font-sans text-sm lg:text-base text-foreground font-medium">
+                        Master of Laws
+                      </p>
+                      <p className="font-sans text-xs lg:text-sm text-foreground/70">
+                        Advanced Legal Studies
+                      </p>
+                    </div>
+                    <div>
                       <Badge variant="secondary" className="mb-2 text-xs">LLB</Badge>
                       <p className="font-sans text-sm lg:text-base text-foreground font-medium">
                         Bachelor of Laws
                       </p>
                       <p className="font-sans text-xs lg:text-sm text-foreground/70">
-                        Education Gradation with English Litreture
+                        Legal Foundation & Practice
                       </p>
                     </div>
-                    
+                    <div>
+                      <Badge variant="secondary" className="mb-2 text-xs">MA</Badge>
+                      <p className="font-sans text-sm lg:text-base text-foreground font-medium">
+                        Master of Arts
+                      </p>
+                      <p className="font-sans text-xs lg:text-sm text-foreground/70">
+                        Advanced Academic Studies
+                      </p>
+                    </div>
+                    <div>
+                      <Badge variant="secondary" className="mb-2 text-xs">B.Ed</Badge>
+                      <p className="font-sans text-sm lg:text-base text-foreground font-medium">
+                        Bachelor of Education
+                      </p>
+                      <p className="font-sans text-xs lg:text-sm text-foreground/70">
+                        Educational Methodology & Teaching
+                      </p>
+                    </div>
                   </div>
                 </CardContent>
               </Card>
