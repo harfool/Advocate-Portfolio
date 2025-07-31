@@ -34,7 +34,7 @@ export const AboutSection = () => {
         <Scale className="absolute top-20 right-10 w-8 h-8 md:w-12 md:h-12 text-accent/30 floating" style={{ animationDelay: '0s' }} />
         <Gavel className="absolute top-40 left-20 w-10 h-10 md:w-16 md:h-16 text-accent/20 floating" style={{ animationDelay: '1s' }} />
         <Building className="absolute bottom-32 right-20 w-9 h-9 md:w-14 md:h-14 text-accent/25 floating" style={{ animationDelay: '2s' }} />
-      </div>
+      </div>    
 
       <div className="container mx-auto px-6 lg:px-12 relative z-10">
         <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
@@ -62,15 +62,15 @@ export const AboutSection = () => {
             <div className={`grid grid-cols-2 gap-4 lg:gap-8 pt-6 lg:pt-8 ${isVisible ? 'animate-on-scroll visible' : 'animate-on-scroll'}`} style={{ animationDelay: '0.9s' }}>
               <div className="text-center lg:text-left">
                 <div className="flex items-center justify-center lg:justify-start space-x-2 mb-2">
-                  <Calendar className="w-4 h-4 lg:w-5 lg:h-5 text-accent" />
-                  <span className="text-2xl lg:text-3xl font-bold text-accent font-serif">12+</span>
+                  <Calendar className="w-4 h-4 lg:w-5 lg:h-5 " />
+                  <span className="text-2xl lg:text-3xl font-bold  font-serif">10+</span>
                 </div>
                 <div className="text-xs lg:text-sm text-foreground/80 font-sans">Years Experience</div>
               </div>
               <div className="text-center lg:text-left">
                 <div className="flex items-center justify-center lg:justify-start space-x-2 mb-2">
-                  <Award className="w-4 h-4 lg:w-5 lg:h-5 text-accent" />
-                  <span className="text-2xl lg:text-3xl font-bold text-accent font-serif">150+</span>
+                  <Award className="w-4 h-4 lg:w-5 lg:h-5 " />
+                  <span className="text-2xl lg:text-3xl font-bold  font-serif">100+</span>
                 </div>
                 <div className="text-xs lg:text-sm text-foreground/80 font-sans">Cases Won</div>
               </div>
@@ -79,12 +79,8 @@ export const AboutSection = () => {
             {/* Court Practice */}
             <div className={`grid grid-cols-1 gap-3 ${isVisible ? 'animate-on-scroll visible' : 'animate-on-scroll'}`} style={{ animationDelay: '1.2s' }}>
               <div className="flex items-center justify-center lg:justify-start space-x-3">
-                <MapPin className="w-4 h-4 lg:w-5 lg:h-5 text-accent" />
+                <MapPin className="w-4 h-4 lg:w-5 lg:h-5 " />
                 <span className="font-sans text-sm lg:text-base text-foreground">Delhi High Court</span>
-              </div>
-              <div className="flex items-center justify-center lg:justify-start space-x-3">
-                <MapPin className="w-4 h-4 lg:w-5 lg:h-5 text-accent" />
-                <span className="font-sans text-sm lg:text-base text-foreground">Supreme Court of India</span>
               </div>
             </div>
           </div>
@@ -106,23 +102,15 @@ export const AboutSection = () => {
                         Bachelor of Laws
                       </p>
                       <p className="font-sans text-xs lg:text-sm text-foreground/70">
-                        Delhi University Law Faculty
+                        Education Gradation with English Litreture
                       </p>
                     </div>
-                    <div>
-                      <Badge variant="secondary" className="mb-2 text-xs">LLM</Badge>
-                      <p className="font-sans text-sm lg:text-base text-foreground font-medium">
-                        Master of Laws in Criminal Law
-                      </p>
-                      <p className="font-sans text-xs lg:text-sm text-foreground/70">
-                        Jamia Millia Islamia
-                      </p>
-                    </div>
+                    
                   </div>
                 </CardContent>
               </Card>
 
-              {/* Specializations Card */}
+             
              
 
               {/* Golden Accent Border - Similar to Hero */}
